@@ -19,4 +19,9 @@ public class HelloTest
 	{
 		System.out.println("hello this is please");
 	}
+	
+	public void apps()
+	{
+		System.out.println("adding apps");
+	}
 }
