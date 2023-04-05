@@ -10,4 +10,14 @@ public class HelloTest
 	{
 		System.out.println("nitika hello");
 	}
+	public void copying()
+	{
+		System.out.println("hello this is copy");
+	}
+	
+	public void writing()
+	{
+		System.out.println("hello this is writing");
+	}
+	
 }
