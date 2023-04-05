@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-04T22:04:19 CDT" name="Suite" finished-at="2023-04-04T22:04:50 CDT" duration-ms="30790">
+    <groups>
+    </groups>
+    <test started-at="2023-04-04T22:04:19 CDT" name="Amazon Test Case Execution on Chrome" finished-at="2023-04-04T22:04:50 CDT" duration-ms="30790">
+      <class name="amazonlinksetup.TestCaseAmazon">
+        <test-method signature="aamazonsearch()[pri:1, instance:amazonlinksetup.TestCaseAmazon@2e377400]" started-at="2023-04-04T22:04:19 CDT" name="aamazonsearch" finished-at="2023-04-04T22:04:50 CDT" duration-ms="30755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aamazonsearch -->
+      </class> <!-- amazonlinksetup.TestCaseAmazon -->
+    </test> <!-- Amazon Test Case Execution on Chrome -->
+  </suite> <!-- Suite -->
+</testng-results>
