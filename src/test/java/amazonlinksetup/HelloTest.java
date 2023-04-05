@@ -24,4 +24,9 @@ public class HelloTest
 	{
 		System.out.println("adding apps");
 	}
+	
+	public void phones()
+	{
+		System.out.println("adding phones");
+	}
 }
