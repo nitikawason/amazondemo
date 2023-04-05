@@ -15,4 +15,8 @@ public class HelloTest
 	{
 		System.out.println("hello this is laying");
 	}
+	public void please()
+	{
+		System.out.println("hello this is please");
+	}
 }
