@@ -8,4 +8,11 @@ public class fullydone
 	{
 		System.out.println("done fully");
 	}
+	
+	public void full1()
+	{
+		System.out.println("done fully1");
+	}
 }
+
+
