@@ -18,6 +18,10 @@ public class fullydone
 	{
 		System.out.println("done fully2");
 	}
+	public void full3()
+	{
+		System.out.println("done fully3");
+	}
 }
 
 
