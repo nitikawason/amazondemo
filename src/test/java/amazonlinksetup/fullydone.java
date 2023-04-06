@@ -13,6 +13,13 @@ public class fullydone
 	{
 		System.out.println("done fully1");
 	}
+	
+	public void full2()
+	{
+		System.out.println("done fully2");
+	}
 }
+
+
 
 
