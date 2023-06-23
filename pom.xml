@@ -16,7 +16,10 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+  
   </properties>
+  
+  
 
   <dependencies>
   
@@ -53,6 +56,33 @@
 </dependency>
 
   </dependencies>
+  
+  
+  <profiles>
+  <profile>
+  
+  <id>Smoke</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+        <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
+        <plugin>
+         <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.22.1</version>
+          <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>C:\gitcheckconflict\amazondemo\group.xml</suiteXmlFile>
+          </suiteXmlFiles>
+          </configuration>
+             
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  </profile>
+  
+  </profiles>
+  
 <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
@@ -75,17 +105,11 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
-          
-          <configuration>
+           <configuration>
           <suiteXmlFiles>
-          <suiteXmlFile>amazontestng.xml </suiteXmlFile>
-        
+          <suiteXmlFile>C:\gitcheckconflict\amazondemo\amazontestng.xml</suiteXmlFile>
           </suiteXmlFiles>
-          
-          </configuration>
-          
-    
-           
+          </configuration>   
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>

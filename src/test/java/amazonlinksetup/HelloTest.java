@@ -5,16 +5,18 @@ import org.testng.annotations.Test;
 public class HelloTest 
 {
 
-	@Test
+	@Test(groups={"smoke"})
 	public void printing()
 	{
 		System.out.println("nitika hello");
 	}
 	
+	@Test(groups={"smoke"})
 	public void laying ()
 	{
 		System.out.println("hello this is laying");
 	}
+	
 	public void please()
 	{
 		System.out.println("hello this is please");

@@ -8,22 +8,63 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestCaseAmazon 
 {
+	public WebDriver driver;
 	@Test(priority=1)
+	
 	public void aamazonsearch() throws Throwable
 	
 	{
+		
+		configreader config=new configreader();
+		String browser;
+		
+		
+		if(System.getProperty("browser")!=null)
+		{
+			browser=System.getProperty("browser");
+		}
+			
+		else
+		{
+			
+
+	     browser=config.browserName();
+         }
+			
+		if(browser.equals("chrome"))
+		{
+		
 		WebDriverManager.chromedriver().setup();
 		//System.setProperty("webdriver.chrome.driver","C:\\GridFile\\chromedriver.exe" );
-		WebDriver driver=new ChromeDriver();
+		 driver=new ChromeDriver();
+		}
+		if(browser.equals("edge"))
+		{
+		
+		WebDriverManager.edgedriver().setup();
+		//System.setProperty("webdriver.chrome.driver","C:\\GridFile\\chromedriver.exe" );
+		 driver=new EdgeDriver();
+		 
+		
+		}
+		
+	
+	System.getProperty("browser");
+	
+	
 		driver.get("https://www.amazon.com/");
 		driver.manage().window().maximize();
 		List<WebElement> ele=driver.findElements(By.tagName("a"));

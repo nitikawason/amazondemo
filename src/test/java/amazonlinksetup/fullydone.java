@@ -1,12 +1,15 @@
 package amazonlinksetup;
 
+import org.testng.annotations.Test;
+
 public class fullydone 
 {
 
 	
+	@Test
 	public void full()
 	{
-		System.out.println("done fully");
+		System.out.println("done fully nitika test to check");
 	}
 	
 	public void full1()
