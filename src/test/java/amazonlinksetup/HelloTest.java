@@ -40,4 +40,9 @@ public class HelloTest
 		System.out.println("adding phones3");
 	
 }
+	public void phones4()
+	{
+		System.out.println("adding phones4");
+	
+}
 }
